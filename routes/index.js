@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const { projects } = require('../data/data.json')
 
 router.get("/", (req, res) => {
-    res.render("/index", { data });
+    res.render("index", { projects });
 });
 
 router.get("/about", (req, res) => {
@@ -10,17 +11,6 @@ router.get("/about", (req, res) => {
     
 });
 
-//error handlers 
-app.use((err, req, res, next) => {
-    const err = new Error("Not Found");
-    err.status = 404;
-    console.error("Page not found");
-    next(err);
-  });
-  
-  app.use(function (err, req, res, next) {
-    err.status = 500;
-    error.message("Something went wrong!");
-  });
+
 
 module.exports = router;

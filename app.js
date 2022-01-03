@@ -24,8 +24,21 @@ const projectRoutes = require('./routes/projects.js');
 app.use(indexRoutes);
 app.use('/projects', projectRoutes);
 
+//error handlers 
+app.use((req, res, next) => {
+  const err = new Error("Not Found");
+  err.status = 404;
+  console.error("Page not found");
+  next(err);
+});
 
-module.exports = router;
+app.use(function (err, req, res, next) {
+  err.status = 500;
+  err.message("Something went Wrong!");
+});
+
+
+
 
 app.listen(3000, () => {
     console.log("The application is running on localhost:3000!")
