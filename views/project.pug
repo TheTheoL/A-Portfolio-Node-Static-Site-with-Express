@@ -27,18 +27,20 @@ block content
           each technology in technologies
             li= technology
 
-        //- Add the href values to the links below
+        //Used template literals to add my github links to the template
         a.btn-link(href=`${live_link}` target="_blank") Live Demo
         a.btn-link(href=`${github_link}` target="_blank") GitHub Repo
 
     .project-img-box.box
 
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
+
+      //I only included one more image to the project apart from the thumbnail. 
       img.project-img(src=`${projects.img_urls[1]}`, alt='Landscape sized photo of my project')
       img.project-img(src=``, alt='')
       img.project-img(src=``, alt='')
 
     nav.nav
-      a(href='/')
+      a(href='/index')
         span &larr;
         |  Back
