@@ -21,6 +21,9 @@ app.use(express.urlencoded({ extended: false }));
 const indexRoutes = require('./routes/index.js');
 const projectRoutes = require('./routes/projects.js');
 
+app.use(indexRoutes);
+app.use('/projects', projectRoutes);
+
 
 //error handlers 
 app.use((err, req, res, next) => {
