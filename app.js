@@ -1,8 +1,8 @@
 const express = require("express");
 const path = require("path")
 const router = express.Router();
-const { data } = require("../data/data.json");
-const { projects } = data;
+const { projects } = require("./data/data.json");
+
 
 
 const app = express();
@@ -13,7 +13,7 @@ app.use("/static", express.static("public"));
 
 
 /* Express middleware for accessing the req.body */
-pp.use(express.json());
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
