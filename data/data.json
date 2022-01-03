@@ -6,8 +6,8 @@
             "project_name": "Randoom Quote Generator",
             "description": "An application that generates a random quote and makes it appear on the webpage.",
             "technologies": ["HTML", "CSS", "JavaScript"],
-            "live-link": "https://thetheol.github.io/Project-4/",
-            "github-link": "https://github.com/TheTheoL/Project-4",
+            "live_link": "https://thetheol.github.io/Project-4/",
+            "github_link": "https://github.com/TheTheoL/Project-4",
             "img_urls": [
                 "/images/4-landing.png",
                 "/images/4-landscape.png"

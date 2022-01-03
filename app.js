@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path")
 const router = express.Router();
-const { projects } = require("./data/data.json");
+const data = require("./data/data.json");
 
 
 
@@ -23,21 +23,6 @@ const projectRoutes = require('./routes/projects.js');
 
 app.use(indexRoutes);
 app.use('/projects', projectRoutes);
-
-
-//error handlers 
-app.use((err, req, res, next) => {
-    const err = new Error("Not Found");
-    err.status = 404;
-    console.err("Page not found");
-    next(err);
-  });
-
-  app.use(function (err, req, res, next) {
-    err.status = 500;
-    err.message("Something went wrong!");
-  });
-
 
 
 module.exports = router;
