@@ -32,10 +32,6 @@ app.use((req, res, next) => {
   next(err);
 });
 
-app.use(function (err, req, res, next) {
-  err.status = 500;
-  err.message("Something went Wrong!");
-});
 
 
 
