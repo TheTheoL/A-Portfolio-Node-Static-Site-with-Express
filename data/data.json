@@ -10,7 +10,7 @@
             "github_link": "https://github.com/TheTheoL/Project-4",
             "img_urls": [
                 "/static/images/4-landing.png",
-                "/staticimages/4-landscape.png"
+                "/static/images/4-landscape.png"
             ]
         },
         {
@@ -34,7 +34,7 @@
             "github-link": "https://github.com/TheTheoL/Project-6",
             "img_urls": [
                 "/static/images/6-landing.png",
-                "/static/images/6-landscape"
+                "/static/images/6-landscape.png"
             ]
         },
         {

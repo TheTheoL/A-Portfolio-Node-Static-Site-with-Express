@@ -3,7 +3,7 @@ extends layout.pug
 block content
 
   nav.nav
-    a(href='/index')
+    a(href='/')
       span &larr;
       |  Back
 
@@ -13,17 +13,17 @@ block content
 
         //- Use the info in your data file and the comments below to complete this template
         //- Use interpolation to dynamically add the project title
-        h1= `${project.project_name[0]}`
+        h1= `${project.project_name}`
 
         //- Use interpolation to dynamically add the project description
-        p= `${project.description[0]}`
+        p= `${project.description}`
 
       .project-tech-links-box.box
         h6 Technologies
         ul
 
           //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-          each technology in technologies
+          each technology in project.technologies
             li= technology
 
         //Used template literals to add my github links to the template
@@ -39,6 +39,6 @@ block content
       img.project-img(src=``, alt='')
 
     nav.nav
-      a(href='/index')
+      a(href='/')
         span &larr;
         |  Back
