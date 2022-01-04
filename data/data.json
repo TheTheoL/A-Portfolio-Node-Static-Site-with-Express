@@ -9,8 +9,8 @@
             "live_link": "https://thetheol.github.io/Project-4/",
             "github_link": "https://github.com/TheTheoL/Project-4",
             "img_urls": [
-                "/images/4-landing.png",
-                "/images/4-landscape.png"
+                "/static/images/4-landing.png",
+                "/staticimages/4-landscape.png"
             ]
         },
         {
@@ -21,8 +21,8 @@
             "live-link": "https://thetheol.github.io/Project-5/",
             "github-link": "https://github.com/TheTheoL/Project-5",
             "img_urls": [
-                "/images/5-landing.png",
-                "/images/5-landscape.png"
+                "/static/images/5-landing.png",
+                "/static/images/5-landscape.png"
             ]
         },
         {
@@ -33,8 +33,8 @@
             "live-link": "https://thetheol.github.io/Project-6/",
             "github-link": "https://github.com/TheTheoL/Project-6",
             "img_urls": [
-                "/images/6-landing.png",
-                "/images/6-landscape"
+                "/static/images/6-landing.png",
+                "/static/images/6-landscape"
             ]
         },
         {
@@ -45,8 +45,8 @@
             "live-link": "https://thetheol.github.io/Project-7/",
             "github-link": "https://github.com/TheTheoL/Project-7",
             "img_urls": [
-                "/images/7-landing.png",
-                "/images/7-landscape.png"
+                "/static/images/7-landing.png",
+                "/static/images/7-landscape.png"
             ]
         },
         {
@@ -57,8 +57,8 @@
             "live-link": "https://github.com/TheTheoL/Project-8",
             "github-link": "https://github.com/TheTheoL/Project-8",
             "img_urls": [
-                "/images/8-landing.png",
-                "/images/8-landscape.png"
+                "/static/images/8-landing.png",
+                "/static/images/8-landscape.png"
             ]
         }
     ]
