@@ -13,10 +13,10 @@ block content
 
         //- Use the info in your data file and the comments below to complete this template
         //- Use interpolation to dynamically add the project title
-        h1= `${projects.project_name[0]}`
+        h1= `${project.project_name[0]}`
 
         //- Use interpolation to dynamically add the project description
-        p= `${projects.description[0]}`
+        p= `${project.description[0]}`
 
       .project-tech-links-box.box
         h6 Technologies
@@ -34,7 +34,7 @@ block content
 
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
       //I only included one more image to the project apart from the thumbnail. 
-      img.project-img(src=`${projects.img_urls[0]}`, alt='Landscape sized photo of my project')
+      img.project-img(src=`${project.img_urls[1]}`, alt='Landscape sized photo of my project')
       img.project-img(src=``, alt='')
       img.project-img(src=``, alt='')
 
