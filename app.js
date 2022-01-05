@@ -26,7 +26,7 @@ app.use('/projects', projectRoutes);
 
 //error handlers 
 app.use((req, res, next) => {
-  const err = new Error("Not Found");
+  const err = new Error("Page not found");
   err.status = 404;
   console.error("Page not found");
   next(err);
@@ -34,10 +34,9 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
   res.locals.error = err;
-  res.status(err.status);
-  res.render('error');
+  res.status(500);
+  res.render('error', err);
 });
-
 
 
 
